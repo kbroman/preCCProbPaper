@@ -1,0 +1,7 @@
+Legend for thumbnail for Broman, "Genotype probabilities at
+intermediate generations in the construction of recombinant inbred
+lines", Genetics
+
+Illustration of the construction of eight-way recombinant inbred lines
+by sibling mating.  A single autosome is shown.
+
