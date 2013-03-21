@@ -6,7 +6,7 @@ This is a complex and quite theoretical paper with lots of complicated
 algebraic results.
 
 The
-[Calculations/](https://github.com/kbroman/preCCProbPaper/tree/master/Calculations)
+[Calculations](https://github.com/kbroman/preCCProbPaper/tree/master/Calculations)
 directory contains all of the primary results.  For each of various
 different situations, I have plain text files (e.g.,
 [this one](https://github.com/kbroman/preCCProbPaper/blob/master/Calculations/Selfing/Inputs/pi_k.txt)),
@@ -15,5 +15,20 @@ perl script that converts them into Maxima code, R code, and LaTeX
 code.  The Maxima and R versions are used to check the results,
 symbolically and numerically.  The LaTeX versions are ultimately
 incorporated into the paper.
+
+The [Perl](https://github.com/kbroman/preCCProbPaper/tree/master/Perl)
+directory contains scripts that create the
+[LaTeX tables](https://github.com/kbroman/preCCProbPaper/tree/master/Tables)
+in the paper.
+
+The files
+[preCCprob_notab.tex](https://github.com/kbroman/preCCProbPaper/tree/master/preCCprob_notab.tex)
+and
+[preCCprob_supp_notab.tex](https://github.com/kbroman/preCCProbPaper/tree/master/preCCprob_supp_notab.tex)
+contain the primary manuscript.  The tables get added to create the
+final latex files
+[preCCprob.tex](https://github.com/kbroman/preCCProbPaper/tree/master/preCCprob_notab.tex)
+and
+[preCCprob_supp.tex](https://github.com/kbroman/preCCProbPaper/tree/master/preCCprob_supp_notab.tex).
 
 
