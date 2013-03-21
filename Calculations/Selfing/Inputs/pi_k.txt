@@ -1,0 +1,6 @@
+# pi_k (for individual states): two loci, 2-way RIL by selfing
+AA|AA    frac[1,2*(1+2*r)] - left(frac[1,2]right)^{k+1} * left[2 - (1-2*r+2*r^2)^{k-1} + frac[(1-2*r)^k,1+2*r] right]
+AB|AB  frac[r,1+2*r] - left(frac[1,2]right)^{k+1} * left[2 - (1-2*r+2*r^2)^{k-1} - frac[(1-2*r)^k,1+2*r] right]
+AA|AB   left(frac[1,2]right)^k * left[ 1 - (1-2*r+2*r^2)^{k-1} right]
+AA|BB   left(frac[1,2]right)^k * left[ (1 - 2*r + 2*r^2)^{k-1} + (1-2*r)^{k-1} right]
+AB|BA   left(frac[1,2]right)^k * left[ (1 - 2*r + 2*r^2)^{k-1} - (1-2*r)^{k-1} right]

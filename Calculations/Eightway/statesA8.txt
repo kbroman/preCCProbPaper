@@ -1,0 +1,53 @@
+no. strains = 8
+chr_type = A
+Construct individuals
+No. haplotypes = 64
+No. individuals = 4096
+No. prototypes = 46
+AA|AA    8
+AA|AB   32
+AA|AC   64
+AA|AE  128
+AA|BB    8
+AA|BC   64
+AA|BE  128
+AA|CC   16
+AA|CD   32
+AA|CE  256
+AA|EE   32
+AA|EF   64
+AA|EG  128
+AB|AB    8
+AB|AC   64
+AB|AE  128
+AB|BA    8
+AB|BC   64
+AB|BE  128
+AB|CD   16
+AB|CE  256
+AB|EF   32
+AB|EG  128
+AC|AC   16
+AC|AD   32
+AC|AE  256
+AC|BD   16
+AC|BE  256
+AC|CA   16
+AC|CB   32
+AC|CE  256
+AC|DB   16
+AC|DE  256
+AC|EG  128
+AE|AE   32
+AE|AF   64
+AE|AG  128
+AE|BF   32
+AE|BG  128
+AE|CG  128
+AE|EA   32
+AE|EB   64
+AE|EC  128
+AE|FB   32
+AE|FC  128
+AE|GC  128
+Total = 4096

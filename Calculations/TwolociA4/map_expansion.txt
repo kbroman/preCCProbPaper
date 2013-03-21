@@ -1,0 +1,5 @@
+# map expansion, sib mating, autosome
+Two-way     4 - left(frac[10 + 6*sqrt{5},5]right) * left(frac[1+sqrt{5},4]right)^k - left(frac[10 - 6*sqrt{5},5]right) * left(frac[1-sqrt{5},4]right)^k 
+Four-way    6 - left(frac[15 + 7*sqrt{5},5]right) * left(frac[1+sqrt{5},4]right)^k - left(frac[15 - 7*sqrt{5},5]right) * left(frac[1-sqrt{5},4]right)^k 
+Eight-way   7 - left(frac[15 + 7*sqrt{5},5]right) * left(frac[1+sqrt{5},4]right)^k  - left(frac[15 - 7*sqrt{5},5]right) * left(frac[1-sqrt{5},4]right)^k
+2^n-way   n+4 - left(frac[15 + 7*sqrt{5},5]right) * left(frac[1+sqrt{5},4]right)^k  - left(frac[15 - 7*sqrt{5},5]right) * left(frac[1-sqrt{5},4]right)^k

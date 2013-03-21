@@ -1,0 +1,31 @@
+pik : matrix([    /* kth generation probabilities */
+((1)/(2*(1+2*r))) - (((1)/(2)))^(k+1) * (2 - (1-2*r+2*r^2)^(k-1) + (((1-2*r)^k)/(1+2*r)) ),
+((r)/(1+2*r)) - (((1)/(2)))^(k+1) * (2 - (1-2*r+2*r^2)^(k-1) - (((1-2*r)^k)/(1+2*r)) ),
+(((1)/(2)))^k * ( 1 - (1-2*r+2*r^2)^(k-1) ),
+(((1)/(2)))^k * ( (1 - 2*r + 2*r^2)^(k-1) + (1-2*r)^(k-1) ),
+(((1)/(2)))^k * ( (1 - 2*r + 2*r^2)^(k-1) - (1-2*r)^(k-1) )])$
+
+hapAA : radcan(pik[1][1] + pik[1][3] + pik[1][4]/2);
+
+hapAB : radcan(pik[1][2] + pik[1][3] + pik[1][5]/2);
+
+R : 2*hapAB$
+
+g : diff(R, r)$
+
+me : radcan(ev(g, r=0));
+
+mealt : 2 - 1/2^(k-2);
+
+/* 4-way RIL */
+R4self : 1 - 2*(1-r)*hapAA$
+g4self: diff(R4self, r)$
+me4self : radcan(ev(g4self, r=0));
+me4selfalt : 3 - (1/2)^(k-2);
+
+/* 8-way RIL */
+R8self : 1 - 2*(1-r)^2*hapAA$
+g8self: diff(R8self, r)$
+me8self : radcan(ev(g8self, r=0));
+me8selfalt : 4 - (1/2)^(k-2);
+

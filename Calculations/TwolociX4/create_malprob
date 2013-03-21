@@ -1,0 +1,9 @@
+../CalcTM/calcprob2loc 4 X 0.00 50 "AA|BBxCC" male > male0.00.txt
+../CalcTM/calcprob2loc 4 X 0.01 50 "AA|BBxCC" male > male0.01.txt
+../CalcTM/calcprob2loc 4 X 0.02 50 "AA|BBxCC" male > male0.02.txt
+../CalcTM/calcprob2loc 4 X 0.03 50 "AA|BBxCC" male > male0.03.txt
+../CalcTM/calcprob2loc 4 X 0.05 50 "AA|BBxCC" male > male0.05.txt
+../CalcTM/calcprob2loc 4 X 0.10 50 "AA|BBxCC" male > male0.10.txt
+../CalcTM/calcprob2loc 4 X 0.13 50 "AA|BBxCC" male > male0.13.txt
+../CalcTM/calcprob2loc 4 X 0.27 50 "AA|BBxCC" male > male0.27.txt
+../CalcTM/calcprob2loc 4 X 0.50 50 "AA|BBxCC" male > male0.50.txt

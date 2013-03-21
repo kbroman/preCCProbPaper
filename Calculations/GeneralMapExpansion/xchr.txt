@@ -1,0 +1,131 @@
+femCC : 1/(12*r+3) - 1/(3*r+3)*(-1/2)^k + 
+       (9*r^2 +5*r + r*sqrt(r^2-10*r+5))/((8*r^2+10*r+2)*sqrt(r^2-10*r+5))*
+       ((1 - r + sqrt(r^2-10*r+5))/4)^k - 
+       (9*r^2 +5*r - r*sqrt(r^2-10*r+5))/((8*r^2+10*r+2)*sqrt(r^2-10*r+5))*
+       ((1 - r - sqrt(r^2-10*r+5))/4)^k$
+
+femAA : (1/2)*(2/(12*r+3) + 1/(3*r+3)*(-1/2)^k - 
+       (4*r^3 - sqrt(r^2-10*r+5)*(4*r^2+3*r)+3*r^2-5*r)/((8*r^2+10*r+2)*sqrt(r^2-10*r+5))*
+       ((1 - r + sqrt(r^2-10*r+5))/4)^k + 
+       (4*r^3 + sqrt(r^2-10*r+5)*(4*r^2+3*r)+3*r^2-5*r)/((8*r^2+10*r+2)*sqrt(r^2-10*r+5))*
+       ((1 - r - sqrt(r^2-10*r+5))/4)^k)$
+
+malCC : 1/(12*r+3) + 2/(3*r+3)*(-1/2)^k + 
+       (2*r^4 + sqrt(r^2-10*r+5)*(2*r^3-r^2+r)-19*r^3+5*r)/(4*r^4-35*r^3-29*r^2+15*r+5) *
+       ((1 - r + sqrt(r^2-10*r+5))/4)^k + 
+       (2*r^4 - sqrt(r^2-10*r+5)*(2*r^3-r^2+r)-19*r^3+5*r)/(4*r^4-35*r^3-29*r^2+15*r+5) *
+       ((1 - r - sqrt(r^2-10*r+5))/4)^k$
+
+malAA : 1/(12*r+3) - 1/(3*r+3)*(-1/2)^k + 
+       (r^3 - sqrt(r^2-10*r+5)*(8*r^3+r^2-3*r)-10*r^2+5*r)/(4*r^4-35*r^3-29*r^2+15*r+5)/2 *
+       ((1 - r + sqrt(r^2-10*r+5))/4)^k + 
+       +(r^3 + sqrt(r^2-10*r+5)*(8*r^3+r^2-3*r)-10*r^2+5*r)/(4*r^4-35*r^3-29*r^2+15*r+5)/2 *
+       ((1 - r - sqrt(r^2-10*r+5))/4)^k$
+
+hapAA : radcan((2/3)*femAA + (1/3)*malAA)$
+hapCC : radcan((2/3)*femCC + (1/3)*malCC)$
+
+
+/* autosome 2^n-way */
+meauto : n+4 - ((1+sqrt(5))/4)^k * (15 + 7*sqrt(5))/5 - ((1-sqrt(5))/4)^k * (15 - 7*sqrt(5))/5;
+
+/* 4-way */
+R : radcan((2/3)*(1-femCC - 2*femAA) + (1/3)*(1-malCC - 2*malAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=2)*2/3);
+
+Ralt : radcan((1-hapCC - 2*hapAA))$
+galt : radcan(diff(Ralt, r))$
+mealt : radcan(ev(galt, r=0))$
+
+/* 8-way */
+R : radcan(1 - ( (1-r)*hapCC + hapAA + (1-r)*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=3)*2/3);
+
+/* 16-way */
+mult1 : ((1-r)/2)^2*2 + (1-r)/2$
+mult2 : (1-r)$
+R : radcan(1 - ( mult1*hapCC + mult2*hapAA + mult1*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=4)*2/3);
+
+/* 32-way */
+mult1 : ((1-r)/2)^3*2 +((1-r)/2)^2*3$
+mult2 : ((1-r)/2)^2*2 + (1-r)/2$
+R : radcan(1 - ( mult1*hapCC + mult2*hapAA + mult1*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=5)*2/3);
+
+/* 2^6-way */
+mult1 : ((1-r)/2)^4*2 + ((1-r)/2)^3*5 + ((1-r)/2)^2*1$
+mult2 : ((1-r)/2)^3*2 +((1-r)/2)^2*3$
+R : radcan(1 - ( mult1*hapCC + mult2*hapAA + mult1*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=6)*2/3);
+
+/* 2^7-way */
+mult1 : ((1-r)/2)^5*2 + ((1-r)/2)^4*7 + ((1-r)/2)^3*4$
+mult2 : ((1-r)/2)^4*2 + ((1-r)/2)^3*5 + ((1-r)/2)^2*1$
+R : radcan(1 - ( mult1*hapCC + mult2*hapAA + mult1*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=7)*2/3);
+
+/* 2^8-way */
+mult1 : ((1-r)/2)^6*2 + ((1-r)/2)^5*9 + ((1-r)/2)^4*9 + ((1-r)/2)^3*1$
+mult2 : ((1-r)/2)^5*2 + ((1-r)/2)^4*7 + ((1-r)/2)^3*4$
+R : radcan(1 - ( mult1*hapCC + mult2*hapAA + mult1*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=8)*2/3);
+
+/* 2^9-way */
+mult1 : ((1-r)/2)^7*2 + ((1-r)/2)^6*11 + ((1-r)/2)^5*16 + ((1-r)/2)^4*5$
+mult2 : ((1-r)/2)^6*2 + ((1-r)/2)^5*9 + ((1-r)/2)^4*9 + ((1-r)/2)^3*1$
+R : radcan(1 - ( mult1*hapCC + mult2*hapAA + mult1*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=9)*2/3);
+
+/* 2^10-way */
+mult1 : ((1-r)/2)^8*2 + ((1-r)/2)^7*13 + ((1-r)/2)^6*25 + ((1-r)/2)^5*14 + ((1-r)/2)^4*1$
+mult2 : ((1-r)/2)^7*2 + ((1-r)/2)^6*11 + ((1-r)/2)^5*16 + ((1-r)/2)^4*5$
+R : radcan(1 - ( mult1*hapCC + mult2*hapAA + mult1*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=10)*2/3);
+
+
+/* 2^11-way */
+mult1 : ((1-r)/2)^9*2 + ((1-r)/2)^8*15 + ((1-r)/2)^7*36 + ((1-r)/2)^6*30 + ((1-r)/2)^5*6$
+mult2 : ((1-r)/2)^8*2 + ((1-r)/2)^7*13 + ((1-r)/2)^6*25 + ((1-r)/2)^5*14 + ((1-r)/2)^4*1$
+R : radcan(1 - ( mult1*hapCC + mult2*hapAA + mult1*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=11)*2/3);
+
+
+/* 2^12-way */
+mult1 : ((1-r)/2)^10*2 + ((1-r)/2)^9*17 + ((1-r)/2)^8*49 + ((1-r)/2)^7*55 + ((1-r)/2)^6*20 + ((1-r)/2)^5*1$
+mult2 : ((1-r)/2)^9*2 + ((1-r)/2)^8*15 + ((1-r)/2)^7*36 + ((1-r)/2)^6*30 + ((1-r)/2)^5*6$
+R : radcan(1 - ( mult1*hapCC + mult2*hapAA + mult1*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=12)*2/3);
+
+/* 2^12-way */
+mult1 : ((1-r)/2)^10*2 + ((1-r)/2)^9*17 + ((1-r)/2)^8*49 + ((1-r)/2)^7*55 + ((1-r)/2)^6*20 + ((1-r)/2)^5*1$
+mult2 : ((1-r)/2)^9*2 + ((1-r)/2)^8*15 + ((1-r)/2)^7*36 + ((1-r)/2)^6*30 + ((1-r)/2)^5*6$
+R : radcan(1 - ( mult1*hapCC + mult2*hapAA + mult1*hapAA))$
+g : radcan(diff(R, r))$
+me : radcan(ev(g, r=0))$
+radcan(me - ev(meauto, n=12)*2/3);
+
+
+

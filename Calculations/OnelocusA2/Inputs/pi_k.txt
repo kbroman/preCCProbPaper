@@ -1,0 +1,5 @@
+# pi_k (for individual states): one locus, 2-way RIL by sib mating, autosome
+AAxAA    (1/2) + (1/5)*(1/4)^k - [(7-3*sqrt{5})/20]*[(1-sqrt{5})/4]^k - [(7+3*sqrt{5})/20]*[(1+sqrt{5})/4]^k
+AAxAB    (-4/5)*(1/4)^k + (2/5)*[(1-sqrt{5})/4]^k + (2/5)*[(1+sqrt{5})/4]^k
+AAxBB    (2/5)*(1/4)^k + [(3+sqrt{5})/10]*[(1-sqrt{5})/4]^k + [(3-sqrt{5})/10]*[(1+sqrt{5})/4]^k
+ABxAB    (4/5)*(1/4)^k - [(2 + 2*sqrt{5})/5]*[(1-sqrt{5})/4]^k - [(2-2*sqrt{5})/5]*[(1+sqrt{5})/4]^k

@@ -1,0 +1,6 @@
+# transition matrix: one locus, 2-way RIL by sib mating, autosome
+        AAxAA  AAxAB  AAxBB  ABxAB  
+AAxAA     1      0      0      0   
+AAxAB    1/4    1/2     0     1/4  
+AAxBB     0      0      0      1   
+ABxAB    1/8    1/2    1/8    1/4 

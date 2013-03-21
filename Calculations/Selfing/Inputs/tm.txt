@@ -1,0 +1,7 @@
+# transition matrix: two loci, 2-way RIL by selfing
+          AA|AA     AB|AB     AA|AB       AA|BB    AB|BA
+AA|AA       1         0         0           0        0
+AB|AB       0         1         0           0        0
+AA|AB      1/4       1/4       1/2          0        0
+AA|BB   (1-r)^2/2   r^2/2    2*r*(1-r)  (1-r)^2/2   r^2/2
+AB|BA     r^2/2   (1-r)^2/2  2*r*(1-r)    r^2/2   (1-r)^2/2

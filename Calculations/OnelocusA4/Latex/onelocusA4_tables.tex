@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+
+\usepackage{times}
+\usepackage{amsmath}
+
+
+% revise margins
+\setlength{\headheight}{0.0in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\textheight}{6.5in}
+\setlength{\footskip}{0.35in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{9in}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+\usepackage{lscape}
+\landscape
+\pagestyle{empty}
+
+\begin{document}
+
+\textbf{\sffamily One autosomal locus, 4-way RIL by sibling mating}
+\bigskip
+
+\scriptsize
+\begin{center}
+Transition matrix, $Pr(G_{k+1}=g_{k+1} | G_k = g_k)$ \\[6pt]
+\renewcommand{\arraystretch}{1.5}\begin{tabular}{cccccccccccccc} \hline
+& \multicolumn{13}{c}{$g_{k+1}$} \\ \cline{2-14}
+$g_k$ & $AA \times AA$ & $AA \times AB$ & $AA \times AC$ & $AA \times BB$ & $AA \times BC$ & $AA \times CC$ & $AA \times CD$ & $AB \times AB$ & $AB \times AC$ & $AB \times CD$ & $AC \times AC$ & $AC \times AD$ & $AC \times BD$  \\ \hline 
+$AA \times AA$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ 
+$AA \times AB$ & $1/4$ & $1/2$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1/4$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ 
+$AA \times AC$ & $1/4$ & $0$ & $1/2$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1/4$ & $0$ & $0$ \\ 
+$AA \times BB$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ 
+$AA \times BC$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1/4$ & $1/2$ & $0$ & $1/4$ & $0$ & $0$ \\ 
+$AA \times CC$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ \\ 
+$AA \times CD$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1/2$ & $1/2$ & $0$ \\ 
+$AB \times AB$ & $1/8$ & $1/2$ & $0$ & $1/8$ & $0$ & $0$ & $0$ & $1/4$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ 
+$AB \times AC$ & $1/16$ & $1/8$ & $1/8$ & $0$ & $1/8$ & $0$ & $0$ & $1/16$ & $1/4$ & $0$ & $1/8$ & $1/8$ & $0$ \\ 
+$AB \times CD$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1/4$ & $1/2$ & $1/4$ \\ 
+$AC \times AC$ & $1/8$ & $0$ & $1/2$ & $0$ & $0$ & $1/8$ & $0$ & $0$ & $0$ & $0$ & $1/4$ & $0$ & $0$ \\ 
+$AC \times AD$ & $1/16$ & $0$ & $1/4$ & $0$ & $0$ & $0$ & $1/8$ & $1/16$ & $1/4$ & $0$ & $1/8$ & $1/8$ & $0$ \\ 
+$AC \times BD$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1/8$ & $1/2$ & $1/8$ & $1/8$ & $0$ & $1/8$ \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+\footnotesize
+\begin{center}
+Genotype probabilities at $\text{G}_2\text{F}_k$ (where $\text{G}_2\text{F}_0 \equiv AB \times CD$)\\[6pt]
+\renewcommand{\arraystretch}{1.5}\begin{tabular}{ccc}\hline
+prototype & no. states & probability of each \\ \hline
+$AA \times AA$ & 4 & $((1)/(4)) + ((1)/(4))(((1)/(2)))^k - ((1)/(20))(((1)/(4)))^k - (((9+4\sqrt(5))/(40)))(((1+\sqrt(5))/(4)))^k - (((9-4\sqrt(5))/(40)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$AA \times AB$ & 4 & $((1)/(6))(-((1)/(4)))^k+((1)/(10))(((1)/(4)))^k-((1)/(6))(((1)/(2)))^k-(((1-\sqrt(5))/(20)))(((1+\sqrt(5))/(4)))^k - (((1+\sqrt(5))/(20)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$AA \times AC$ & 8 & $-((1)/(12))(-((1)/(4)))^k+((1)/(20))(((1)/(4)))^k-((1)/(6))(((1)/(2)))^k + ((1)/(10))((((1+\sqrt(5))/(4)))^k + (((1-\sqrt(5))/(4)))^k)$ \\ 
+$AA \times BB$ & 2 & $((1)/(3))(-((1)/(4)))^k-((2)/(15))(-((1)/(8)))^k+((1)/(30))(((1)/(4)))^k-((1)/(30))(((1)/(2)))^k-(((2-\sqrt(5))/(20)))(((1+\sqrt(5))/(4)))^k-(((2+\sqrt(5))/(20)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$AA \times BC$ & 8 & $-((1)/(12))(-((1)/(4)))^k + ((2)/(15))(-((1)/(8)))^k - ((1)/(12))(((1)/(4)))^k + ((1)/(30))(((1)/(2)))^k$ \\ 
+$AA \times CC$ & 4 & $-((1)/(6))(-((1)/(4)))^k + ((1)/(30))(-((1)/(8)))^k + ((1)/(60))(((1)/(4)))^k - ((1)/(30))(((1)/(2)))^k +(((3-\sqrt(5))/(40)))(((1+\sqrt(5))/(4)))^k+(((3+\sqrt(5))/(40)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$AA \times CD$ & 4 & $((1)/(6))(-((1)/(4)))^k - ((1)/(5))(-((1)/(8)))^k + ((1)/(30))(((1)/(2)))^k$ \\ 
+$AB \times AB$ & 2 & $-((2)/(3))(-((1)/(4)))^k+((2)/(15))(-((1)/(8)))^k+((1)/(15))(((1)/(4)))^k-((2)/(15))(((1)/(2)))^k +(((3-\sqrt(5))/(10)))(((1+\sqrt(5))/(4)))^k+(((3+\sqrt(5))/(10)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$AB \times AC$ & 8 & $((1)/(6))(-((1)/(4)))^k-((2)/(15))(-((1)/(8)))^k-((1)/(6))(((1)/(4)))^k+((2)/(15))(((1)/(2)))^k$ \\ 
+$AB \times CD$ & 1 & $((2)/(3))(-((1)/(8)))^k+((1)/(3))(((1)/(4)))^k$ \\ 
+$AC \times AC$ & 4 & $((1)/(3))(-((1)/(4)))^k-((1)/(30))(-((1)/(8)))^k+((1)/(30))(((1)/(4)))^k-((2)/(15))(((1)/(2)))^k -(((2-2\sqrt(5))/(20)))(((1+\sqrt(5))/(4)))^k-(((2+2\sqrt(5))/(20)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$AC \times AD$ & 4 & $-((1)/(3))(-((1)/(4)))^k + ((1)/(5))(-((1)/(8)))^k+((2)/(15))(((1)/(2)))^k$ \\ 
+$AC \times BD$ & 2 & $-((1)/(3))(-((1)/(8)))^k + ((1)/(3))(((1)/(4)))^k$ \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}

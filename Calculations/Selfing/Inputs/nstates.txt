@@ -1,0 +1,6 @@
+# no. states: two loci, 2-way RIL by selfing
+AA|AA  2
+AB|AB  2
+AA|AB  4
+AA|BB  1
+AB|BA  1

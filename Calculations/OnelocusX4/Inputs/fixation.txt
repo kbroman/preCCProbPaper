@@ -1,0 +1,3 @@
+# fixation probabilities
+four-way X  1 + left(frac[1,2]right)^{k+1} - left(frac[15+7*sqrt{5},20]right)*left(frac[1+sqrt{5},4]right)^k - left(frac[15-7*sqrt{5},20]right)*left(frac[1-sqrt{5},4]right)^k
+two-way  X  1 - left(frac[5+3*sqrt{5},10]right)*left(frac[1+sqrt{5},4]right)^k-left(frac[5-3*sqrt{5},10]right)*left(frac[1-sqrt{5},4]right)^k

@@ -1,0 +1,4 @@
+# pi_k (for individual states): one locus, random individual, 4-way RIL by sib mating, autosome
+AA 4  frac[1,4] - left(frac[5+3*sqrt{5},40]right) * left(frac[1+sqrt{5},4]right)^k - left(frac[5-3*sqrt{5},40]right) * left(frac[1-sqrt{5},4]right)^k
+AB 2  left(frac[5-sqrt{5},20]right) * left(frac[1+sqrt{5},4]right)^k + left(frac[5+sqrt{5},20]right) * left(frac[1-sqrt{5},4]right)^k
+AC 4  frac[sqrt{5},10] * left[left(frac[1+sqrt{5},4]right)^k - left(frac[1-sqrt{5},4]right)^kright]

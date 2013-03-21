@@ -1,0 +1,11 @@
+# pi_k (for individual states): one locus, 4-way RIL by sib mating, X chromosome
+AAxA frac[1,3]+frac[1,24]*left(-frac[1,2]right)^k + frac[1,8]*left(frac[1,2]right)^k - left(frac[5+2*sqrt{5},20]right)*left(frac[1+sqrt{5},4]right)^k - left(frac[5-2*sqrt{5},20]right)*left(frac[1-sqrt{5},4]right)^k
+AAxB frac[1,3]*left(-frac[1,4]right)^k - frac[1,12]*left(frac[1,2]right)^k - left(frac[5-3*sqrt{5},40]right)*left(frac[1+sqrt{5},4]right)^k - left(frac[5+3*sqrt{5},40]right)*left(frac[1-sqrt{5},4]right)^k
+AAxC frac[1,8]*left(-frac[1,2]right)^k-frac[1,24]*left(frac[1,2]right)^k-frac[1,3]*left(-frac[1,4]right)^k+left(frac[5-sqrt{5},40]right)*left(frac[1+sqrt{5},4]right)^k+left(frac[5+sqrt{5},40]right)*left(frac[1-sqrt{5},4]right)^k
+ABxA -frac[1,6]*left(frac[1,2]right)^k-frac[1,3]*left(-frac[1,4]right)^k+left(frac[5-sqrt{5},20]right)*left(frac[1+sqrt{5},4]right)^k+left(frac[5+sqrt{5},20]right)*left(frac[1-sqrt{5},4]right)^k
+ABxC frac[1,3]*left(frac[1,2]right)^k + frac[2,3]*left(-frac[1,4]right)^k
+ACxA -frac[1,4]*left(-frac[1,2]right)^k-frac[1,12]*left(frac[1,2]right)^k+frac[1,3]*left(-frac[1,4]right)^k+frac[sqrt{5},10]*left[left(frac[1+sqrt{5},4]right)^k-left(frac[1-sqrt{5},4]right)^kright]
+ACxB frac[1,3]*left(frac[1,2]right)^k - frac[1,3]*left(-frac[1,4]right)^k
+ACxC frac[1,4]*left(-frac[1,2]right)^k-frac[1,4]*left(frac[1,2]right)^k+frac[sqrt{5},10]*left[left(frac[1+sqrt{5},4]right)^k-left(frac[1-sqrt{5},4]right)^kright]
+CCxA -frac[1,8]*left(-frac[1,2]right)^k-frac[1,8]*left(frac[1,2]right)^k+left(frac[5-sqrt{5},40]right)*left(frac[1+sqrt{5},4]right)^k+left(frac[5+sqrt{5},40]right)*left(frac[1-sqrt{5},4]right)^k
+CCxC frac[1,3] - frac[1,12]*left(-frac[1,2]right)^k + frac[1,4]*left(frac[1,2]right)^k - left(frac[5+3*sqrt{5},20]right)*left(frac[1+sqrt{5},4]right)^k-left(frac[5-3*sqrt{5},20]right)*left(frac[1-sqrt{5},4]right)^k

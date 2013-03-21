@@ -1,0 +1,8 @@
+statesA8 <- function(r) {
+result <- data.frame(
+count=c( 8, 16, 4, 8, 4, 32, 32, 32, 32, 64, 64, 64, 64, 8, 16, 8, 128, 128, 16, 32, 16, 64, 64, 16, 16, 8, 128, 128, 8, 16, 8, 128, 128, 64, 32, 32, 16, 64, 64, 64, 16, 32, 16, 64, 64, 64),
+state4w=c( "AA|AA", "AA|AA", "AA|AA", "AA|AA", "AA|AA", "AA|AB", "AA|AB", "AA|AB", "AA|AB", "AA|AC", "AA|AC", "AA|AC", "AA|AC", "AA|BB", "AA|BB", "AA|BB", "AA|BC", "AA|BC", "AA|CC", "AA|CC", "AA|CC", "AA|CD", "AA|CD", "AB|AB", "AB|AB", "AB|AB", "AB|AC", "AB|AC", "AB|BA", "AB|BA", "AB|BA", "AB|BC", "AB|BC", "AB|CD", "AC|AC", "AC|AC", "AC|AC", "AC|AD", "AC|AD", "AC|BD", "AC|CA", "AC|CA", "AC|CA", "AC|CB", "AC|CB", "AC|DB"),
+prob=c( ((1-r)/(2)), 0, 0, ((r)/(2)), 0, ((1-r)/(4)), 0, ((r)/(4)), 0, ((1-r)/(4)), 0, ((r)/(4)), 0, (((1-r)^2)/(4)), ((r*(1-r))/(4)), ((r^2)/(4)), ((1-r)/(8)), ((r)/(8)), (((1-r)^2)/(4)), ((r*(1-r))/(4)), ((r^2)/(4)), ((1-r)/(8)), ((r)/(8)), ((1)/(4)), 0, 0, ((1)/(8)), 0, (((1-r)^2)/(4)), ((r*(1-r))/(4)), ((r^2)/(4)), ((1-r)/(8)), ((r)/(8)), ((1)/(16)), ((1)/(4)), 0, 0, ((1)/(8)), 0, ((1)/(16)), (((1-r)^2)/(4)), ((r*(1-r))/(4)), ((r^2)/(4)), ((1-r)/(8)), ((r)/(8)), ((1)/(16))), stringsAsFactors=FALSE)
+rownames(result) <- c( "AA|AA",  "AA|AB",  "AA|BB",  "AB|AB",  "AB|BA",  "AA|AC",  "AA|BC",  "AB|AC",  "AB|BC",  "AA|AE",  "AA|BE",  "AB|AE",  "AB|BE",  "AA|CC",  "AA|CD",  "AB|CD",  "AA|CE",  "AB|CE",  "AA|EE",  "AA|EF",  "AB|EF",  "AA|EG",  "AB|EG",  "AC|AC",  "AC|AD",  "AC|BD",  "AC|AE",  "AC|BE",  "AC|CA",  "AC|CB",  "AC|DB",  "AC|CE",  "AC|DE",  "AC|EG",  "AE|AE",  "AE|AF",  "AE|BF",  "AE|AG",  "AE|BG",  "AE|CG",  "AE|EA",  "AE|EB",  "AE|FB",  "AE|EC",  "AE|FC",  "AE|GC")
+result
+}

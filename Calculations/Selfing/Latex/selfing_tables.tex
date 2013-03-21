@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+
+\usepackage{times}
+\usepackage{amsmath}
+
+
+% revise margins
+\setlength{\headheight}{0.0in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\textheight}{8.65in}
+\setlength{\footskip}{0.35in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{6.5in}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+
+\textbf{\sffamily Two loci, 2-way RIL by selfing}
+\bigskip
+
+\bigskip \bigskip
+\begin{center}
+Transition matrix, $Pr(G_{k+1}=g_{k+1} | G_k = g_k)$ \\[6pt]
+\renewcommand{\arraystretch}{1.5}\begin{tabular}{cccccc} \hline
+& \multicolumn{5}{c}{$g_{k+1}$} \\ \cline{2-6}
+$g_k$ & $AA|AA$ & $AB|AB$ & $AA|AB$ & $AA|BB$ & $AB|BA$  \\ \hline 
+$AA|AA$ & $1$ & $0$ & $0$ & $0$ & $0$ \\ 
+$AB|AB$ & $0$ & $1$ & $0$ & $0$ & $0$ \\ 
+$AA|AB$ & $1/4$ & $1/4$ & $1/2$ & $0$ & $0$ \\ 
+$AA|BB$ & $(1-r)^2/2$ & $r^2/2$ & $2r(1-r)$ & $(1-r)^2/2$ & $r^2/2$ \\ 
+$AB|BA$ & $r^2/2$ & $(1-r)^2/2$ & $2r(1-r)$ & $r^2/2$ & $(1-r)^2/2$ \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\bigskip \bigskip
+\begin{center}
+Genotype probabilities at $\text{F}_k$ (where $\text{F}_0 \equiv AA|BB$)\\[6pt]
+\renewcommand{\arraystretch}{1.5}\begin{tabular}{ccc}\hline
+prototype & no. states & probability of each \\ \hline
+$AA|AA$ & 2 & $\frac{1}{2(1+2r)} - \left(\frac{1}{2}\right)^{k+1}  \left[2 - (1-2r+2r^2)^{k-1} + \frac{(1-2r)^k}{1+2r} \right]$ \\ 
+$AB|AB$ & 2 & $\frac{r}{1+2r} - \left(\frac{1}{2}\right)^{k+1}  \left[2 - (1-2r+2r^2)^{k-1} - \frac{(1-2r)^k}{1+2r} \right]$ \\ 
+$AA|AB$ & 4 & $\left(\frac{1}{2}\right)^k  \left[ 1 - (1-2r+2r^2)^{k-1} \right]$ \\ 
+$AA|BB$ & 1 & $\left(\frac{1}{2}\right)^k  \left[ (1 - 2r + 2r^2)^{k-1} + (1-2r)^{k-1} \right]$ \\ 
+$AB|BA$ & 1 & $\left(\frac{1}{2}\right)^k  \left[ (1 - 2r + 2r^2)^{k-1} - (1-2r)^{k-1} \right]$ \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}

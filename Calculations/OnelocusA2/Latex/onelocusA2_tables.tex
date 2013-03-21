@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+
+\usepackage{times}
+\usepackage{amsmath}
+
+
+% revise margins
+\setlength{\headheight}{0.0in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\textheight}{6.5in}
+\setlength{\footskip}{0.35in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{9in}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+\usepackage{lscape}
+\landscape
+\pagestyle{empty}
+
+\begin{document}
+
+\textbf{\sffamily One autosomal locus, 2-way RIL by sibling mating}
+\bigskip
+
+\begin{center}
+Transition matrix, $Pr(G_{k+1}=g_{k+1} | G_k = g_k)$ \\[6pt]
+\renewcommand{\arraystretch}{1.5}\begin{tabular}{ccccc} \hline
+& \multicolumn{4}{c}{$g_{k+1}$} \\ \cline{2-5}
+$g_k$ & $AA \times AA$ & $AA \times AB$ & $AA \times BB$ & $AB \times AB$  \\ \hline 
+$AA \times AA$ & $1$ & $0$ & $0$ & $0$ \\ 
+$AA \times AB$ & $1/4$ & $1/2$ & $0$ & $1/4$ \\ 
+$AA \times BB$ & $0$ & $0$ & $0$ & $1$ \\ 
+$AB \times AB$ & $1/8$ & $1/2$ & $1/8$ & $1/4$ \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+\begin{center}
+Genotype probabilities at $\text{G}_2\text{F}_k$ (where $\text{G}_2\text{F}_0 \equiv AA \times BB$)\\[6pt]
+\renewcommand{\arraystretch}{1.5}\begin{tabular}{ccc}\hline
+prototype & no. states & probability of each \\ \hline
+$AA \times AA$ & 2 & $(1/2) + (1/5)(1/4)^k - [(7-3\sqrt{5})/20][(1-\sqrt{5})/4]^k - [(7+3\sqrt{5})/20][(1+\sqrt{5})/4]^k$ \\ 
+$AA \times AB$ & 2 & $(-4/5)(1/4)^k + (2/5)[(1-\sqrt{5})/4]^k + (2/5)[(1+\sqrt{5})/4]^k$ \\ 
+$AA \times BB$ & 1 & $(2/5)(1/4)^k + [(3+\sqrt{5})/10][(1-\sqrt{5})/4]^k + [(3-\sqrt{5})/10][(1+\sqrt{5})/4]^k$ \\ 
+$AB \times AB$ & 1 & $(4/5)(1/4)^k - [(2 + 2\sqrt{5})/5][(1-\sqrt{5})/4]^k - [(2-2\sqrt{5})/5][(1+\sqrt{5})/4]^k$ \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}

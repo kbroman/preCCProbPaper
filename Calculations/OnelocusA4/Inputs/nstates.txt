@@ -1,0 +1,14 @@
+# no. states: one locus, 4-way RIL by sib mating, autosome
+AAxAA    4
+AAxAB    4
+AAxAC    8
+AAxBB    2
+AAxBC    8
+AAxCC    4
+AAxCD    4
+ABxAB    2
+ABxAC    8
+ABxCD    1
+ACxAC    4
+ACxAD    4
+ACxBD    2

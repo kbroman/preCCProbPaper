@@ -1,0 +1,29 @@
+batch("selfing_maxima.txt");
+
+pik2 : radcan(pik * nstates);
+
+dif : matrix(
+[radcan(ev(pik2 - pi0, k=1))],
+[radcan(ev(pik2 - pi0 . P, k=2))],
+[radcan(ev(pik2 - pi0 . P^^2, k=3))],
+[radcan(ev(pik2 - pi0 . P^^3, k=4))],
+[radcan(ev(pik2 - pi0 . P^^4, k=5))],
+[radcan(ev(pik2 - pi0 . P^^5, k=6))],
+[radcan(ev(pik2 - pi0 . P^^6, k=7))],
+[radcan(ev(pik2 - pi0 . P^^7, k=8))],
+[radcan(ev(pik2 - pi0 . P^^8, k=9))],
+[radcan(ev(pik2 - pi0 . P^^9, k=10))],
+[radcan(ev(pik2 - pi0 . P^^10, k=11))],
+[radcan(ev(pik2 - pi0 . P^^11, k=12))],
+[radcan(ev(pik2 - pi0 . P^^12, k=13))],
+[radcan(ev(pik2 - pi0 . P^^13, k=14))],
+[radcan(ev(pik2 - pi0 . P^^14, k=15))],
+[radcan(ev(pik2 - pi0 . P^^15, k=16))]
+);
+
+
+radcan(pik . matrix([1, 0, 1], 
+	            [1, 0, 1], 
+		    [1, 2, 1], 
+		    [0, 1, 0], 
+		    [0, 1, 0])); /* one locus probs : AA, AB, BB */

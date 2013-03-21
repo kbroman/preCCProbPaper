@@ -1,0 +1,49 @@
+batch("onelocusA2_maxima.txt");
+
+pik2 : radcan(pik * nstates)$
+radcan(pik2 . transpose(matrix([1, 1, 1, 1])));
+
+dif : matrix(
+[radcan(ev(pik2 - pi0, k=0))],
+[radcan(ev(pik2 - pi0 . P, k=1))],
+[radcan(ev(pik2 - pi0 . P^^k, k=2))],
+[radcan(ev(pik2 - pi0 . P^^k, k=3))],
+[radcan(ev(pik2 - pi0 . P^^k, k=4))],
+[radcan(ev(pik2 - pi0 . P^^k, k=5))],
+[radcan(ev(pik2 - pi0 . P^^k, k=6))],
+[radcan(ev(pik2 - pi0 . P^^k, k=7))],
+[radcan(ev(pik2 - pi0 . P^^k, k=8))],
+[radcan(ev(pik2 - pi0 . P^^k, k=9))],
+[radcan(ev(pik2 - pi0 . P^^k, k=10))],
+[radcan(ev(pik2 - pi0 . P^^k, k=11))],
+[radcan(ev(pik2 - pi0 . P^^k, k=12))],
+[radcan(ev(pik2 - pi0 . P^^k, k=13))],
+[radcan(ev(pik2 - pi0 . P^^k, k=14))],
+[radcan(ev(pik2 - pi0 . P^^k, k=15))]
+);
+
+
+
+/***********/
+
+D : matrix([1,   0, 0, 0],
+    	   [0,  1/4, 0, 0],
+	   [0,   0,  (1-sqrt(5))/4, 0],
+	   [0,   0,     0,   (1+sqrt(5))/4])$
+
+Dk : matrix([1,   0, 0, 0],
+     	    [0,  (1/4)^k, 0, 0],
+	    [0,   0,  ((1-sqrt(5))/4)^k, 0],
+	    [0,   0,     0,   ((1+sqrt(5))/4)^k])$
+
+v : transpose(matrix(
+	[1, 1, 1, 1],
+	[0, 1, -4, -1],
+        [0, 1, 6+2*sqrt(5), -1 - sqrt(5)],
+	[0, 1, 6-2*sqrt(5), -1 + sqrt(5)]))$
+
+vinv : transpose( matrix(
+     [1, -1/10, (-9 + 4*sqrt(5))/20, (-9 - 4*sqrt(5))/20],
+     [0,  2/5,  (3 - sqrt(5))/10, (3 + sqrt(5))/10],
+     [0, -1/10, 1/20, 1/20],
+     [0, -1/5, (1 - sqrt(5))/10, (1+sqrt(5))/10]))$

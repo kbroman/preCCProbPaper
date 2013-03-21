@@ -1,0 +1,5 @@
+# notation for states for calculating autosome haplotype probs for 4-way RIL
+1 AA|--x--
+2 A-|-Ax--
+3 --|--xAA
+4 A-|--x-A

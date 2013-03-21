@@ -1,0 +1,5 @@
+# start matrix for calculating Pr(AA:AB) for autosome in 4-way RIL
+AA|AB (8)     0   0   0   0   0     1/2  0   0   0   0      0   0   0   0   0      0   0 
+AA|AC (16)    0   0   0   0   0      0   0  1/4  0   0      0   0   0   0   0      0   0 
+AB|AC (16)    0   0   0   0   0      0   0   0   0   0      0   0   0   0   0     1/4  0 
+AC|AD (8)     0   0   0   0   0      0   0   0   0   0      0   0   0   0  1/4     0   0 

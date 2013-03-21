@@ -1,0 +1,5 @@
+# matrix for calculating autosomal haplotype probabilities for 4-way RIL by sib mating 
+      AA   AB    AC
+AA   1-r    0   1/4
+AB     r    0   1/4
+AC     0    1   1/2

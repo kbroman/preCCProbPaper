@@ -1,0 +1,11 @@
+../../CalcTM/calctm2locfullsparse 4 A 0.00 > tm4A_00.txt
+../../CalcTM/calctm2locfullsparse 4 A 0.05 > tm4A_05.txt
+../../CalcTM/calctm2locfullsparse 4 A 0.10 > tm4A_10.txt
+../../CalcTM/calctm2locfullsparse 4 A 0.15 > tm4A_15.txt
+../../CalcTM/calctm2locfullsparse 4 A 0.20 > tm4A_20.txt
+../../CalcTM/calctm2locfullsparse 4 A 0.25 > tm4A_25.txt
+../../CalcTM/calctm2locfullsparse 4 A 0.30 > tm4A_30.txt
+../../CalcTM/calctm2locfullsparse 4 A 0.35 > tm4A_35.txt
+../../CalcTM/calctm2locfullsparse 4 A 0.40 > tm4A_40.txt
+../../CalcTM/calctm2locfullsparse 4 A 0.45 > tm4A_45.txt
+../../CalcTM/calctm2locfullsparse 4 A 0.50 > tm4A_50.txt

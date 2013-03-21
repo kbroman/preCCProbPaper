@@ -1,0 +1,5 @@
+# starting values for calculating autosomal haplotype probabilities for 4-way RIL by sib mating 
+      AA   AB    AC
+AA   1/4    0     0
+AB     0  1/4     0
+AC     0    0   1/8

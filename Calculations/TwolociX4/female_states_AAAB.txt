@@ -1,0 +1,19 @@
+# notation for states to derive AA:AB type probability in 4-way RIL, X chr female
+1  AA|ABx--
+2  AA|--xAB
+3  A-|-AxAB
+4  AB|--xAA 
+5  A-|-BxAA 
+6  AA|-Bx--
+7  AB|-Ax-- 
+8  A-|ABx-A 
+9  AB|--x-A
+10 A-|-Bx-A 
+11 AA|A-x-B 
+12 AA|--x-B
+13 A-|-Ax-B 
+14 AA|-BxA- 
+15 AB|-AxA-
+16 -B|--xAA 
+17 -A|--xAB
+18 -A|-BxA-

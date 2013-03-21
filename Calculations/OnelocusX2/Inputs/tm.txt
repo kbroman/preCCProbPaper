@@ -1,0 +1,8 @@
+# transition matrix: one locus, 2-way RIL by sib mating, X chromosome
+       AAxA   AAxB   ABxA   ABxB   BBxA   BBxB  
+AAxA     1      0      0      0      0      0   
+AAxB     0      0      1      0      0      0   
+ABxA    1/4    1/4    1/4    1/4     0      0   
+ABxB     0      0     1/4    1/4    1/4    1/4  
+BBxA     0      0      0      1      0      0   
+BBxB     0      0      0      0      0      1   

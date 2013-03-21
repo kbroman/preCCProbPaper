@@ -1,0 +1,7 @@
+# start: one locus, 2-way RIL by sib mating, X chromosome
+AAxA   0
+AAxB   1
+ABxA   0
+ABxB   0
+BBxA   0
+BBxB   0

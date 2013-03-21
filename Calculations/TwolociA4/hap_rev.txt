@@ -1,0 +1,5 @@
+# autosomal haplotype probabilities for 4-way RIL by sib mating
+AA (4)     frac[1,4*(1+6*r)] - left[frac[6*r^2-7*r-3*r*sqrt{4*r^2-12*r+5},4*(1+6*r)*sqrt{4*r^2-12*r+5}]right]*left(frac[1 - 2*r + sqrt{4*r^2-12*r+5},4]right)^k + left[frac[6*r^2-7*r+3*r*sqrt{4*r^2-12*r+5},4*(1+6*r)*sqrt{4*r^2-12*r+5}]right]*left(frac[1 - 2*r - sqrt{4*r^2-12*r+5},4]right)^k
+AB (4)    frac[r,2*(1+6*r)] + left[frac[10*r^2-r-r*sqrt{4*r^2-12*r+5},4*(1+6*r)*sqrt{4*r^2-12*r+5}]right]*left(frac[1 - 2*r + sqrt{4*r^2-12*r+5},4]right)^k - left[frac[10*r^2-r+r*sqrt{4*r^2-12*r+5},4*(1+6*r)*sqrt{4*r^2-12*r+5}]right]*left(frac[1 - 2*r - sqrt{4*r^2-12*r+5},4]right)^k
+AC (8)    frac[r,2*(1+6*r)] - left[frac[2*r^2+3*r+r*sqrt{4*r^2-12*r+5},4*(1+6*r)*sqrt{4*r^2-12*r+5}]right]*left(frac[1 - 2*r + sqrt{4*r^2-12*r+5},4]right)^k + left[frac[2*r^2+3*r-r*sqrt{4*r^2-12*r+5},4*(1+6*r)*sqrt{4*r^2-12*r+5}]right]* left(frac[1 - 2*r - sqrt{4*r^2-12*r+5},4]right)^k
+

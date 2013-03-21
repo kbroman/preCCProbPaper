@@ -1,0 +1,5 @@
+# map expansion, selfing
+Two-way     2 - left(frac[1,2]right)^{k-2}
+Four-way    3 - left(frac[1,2]right)^{k-2}
+Eight-way   4 - left(frac[1,2]right)^{k-2}
+2^n-way   n+1 - left(frac[1,2]right)^{k-2}

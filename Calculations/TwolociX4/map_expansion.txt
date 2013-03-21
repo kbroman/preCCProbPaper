@@ -1,0 +1,5 @@
+# map expansion, sib mating, X chr
+Two-way    frac[8,3]  - left(frac[20+12*sqrt{5},15]right) * left(frac[1+sqrt{5},4]right)^k  - left(frac[20-12*sqrt{5},15]right) * left(frac[1-sqrt{5},4]right)^k
+Four-way   4 - left(frac[30+14*sqrt{5},15]right) * left(frac[1+sqrt{5},4]right)^k - left(frac[30-14*sqrt{5},15]right) * left(frac[1-sqrt{5},4]right)^k 
+Eight-way  frac[14,3] - left(frac[30 + 14*sqrt{5},15]right) * left(frac[1+sqrt{5},4]right)^k - left(frac[30 - 14*sqrt{5},15]right) * left(frac[1-sqrt{5},4]right)^k
+2^n-way  frac[2*(n+4),3] - left(frac[30 + 14*sqrt{5},15]right) * left(frac[1+sqrt{5},4]right)^k - left(frac[30 - 14*sqrt{5},15]right) * left(frac[1-sqrt{5},4]right)^k

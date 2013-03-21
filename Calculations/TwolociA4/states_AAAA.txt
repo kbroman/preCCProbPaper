@@ -1,0 +1,14 @@
+# notation for states to derive AA:AA type probability in 4-way RIL, autosome
+1  AA|AAx--|--
+2  AA|--xAA|--
+3  AA|--xA-|-A
+4  A-|-AxA-|-A
+5  AA|--x--|-- 
+6  A-|-Ax--|--
+7  AA|A-x--|-- 
+8  AA|--xA-|-- 
+9  A-|-AxA-|--
+10 AA|A-x-A|-- 
+11 A-|--x-A|-- 
+12 A-|A-x-A|--
+13 A-|A-x-A|-A 

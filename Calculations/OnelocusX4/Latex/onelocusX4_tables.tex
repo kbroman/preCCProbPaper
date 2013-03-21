@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+
+\usepackage{times}
+\usepackage{amsmath}
+
+
+% revise margins
+\setlength{\headheight}{0.0in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\textheight}{6.5in}
+\setlength{\footskip}{0.35in}
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{9in}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+\usepackage{lscape}
+\landscape
+\pagestyle{empty}
+
+\begin{document}
+
+\textbf{\sffamily One X chr locus, 4-way RIL by sibling mating}
+\bigskip
+
+\begin{center}
+Transition matrix, $Pr(G_{k+1}=g_{k+1} | G_k = g_k)$ \\[6pt]
+\renewcommand{\arraystretch}{1.5}\begin{tabular}{ccccccccccc} \hline
+& \multicolumn{10}{c}{$g_{k+1}$} \\ \cline{2-11}
+$g_k$ & $AA \times A$ & $AA \times B$ & $AA \times C$ & $AB \times A$ & $AB \times C$ & $AC \times A$ & $AC \times B$ & $AC \times C$ & $CC \times A$ & $CC \times C$  \\ \hline 
+$AA \times A$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ 
+$AA \times B$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ 
+$AA \times C$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ & $0$ & $0$ \\ 
+$AB \times A$ & $1/4$ & $1/4$ & $0$ & $1/2$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ 
+$AB \times C$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1/2$ & $1/2$ & $0$ & $0$ & $0$ \\ 
+$AC \times A$ & $1/4$ & $0$ & $1/4$ & $0$ & $0$ & $1/4$ & $0$ & $1/4$ & $0$ & $0$ \\ 
+$AC \times B$ & $0$ & $0$ & $0$ & $1/4$ & $1/4$ & $0$ & $1/4$ & $1/4$ & $0$ & $0$ \\ 
+$AC \times C$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1/4$ & $0$ & $1/4$ & $1/4$ & $1/4$ \\ 
+$CC \times A$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ & $0$ & $0$ \\ 
+$CC \times C$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ & $1$ \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+\begin{center}
+Genotype probabilities at $\text{G}_2\text{F}_k$ (where $\text{G}_2\text{F}_0 \equiv AB \times C$)\\[6pt]
+\renewcommand{\arraystretch}{1.5}\begin{tabular}{ccc}\hline
+prototype & no. states & probability of each \\ \hline
+$AA \times A$ & 2 & $((1)/(3))+((1)/(24))(-((1)/(2)))^k + ((1)/(8))(((1)/(2)))^k - (((5+2\sqrt(5))/(20)))(((1+\sqrt(5))/(4)))^k - (((5-2\sqrt(5))/(20)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$AA \times B$ & 2 & $((1)/(3))(-((1)/(4)))^k - ((1)/(12))(((1)/(2)))^k - (((5-3\sqrt(5))/(40)))(((1+\sqrt(5))/(4)))^k - (((5+3\sqrt(5))/(40)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$AA \times C$ & 2 & $((1)/(8))(-((1)/(2)))^k-((1)/(24))(((1)/(2)))^k-((1)/(3))(-((1)/(4)))^k+(((5-\sqrt(5))/(40)))(((1+\sqrt(5))/(4)))^k+(((5+\sqrt(5))/(40)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$AB \times A$ & 2 & $-((1)/(6))(((1)/(2)))^k-((1)/(3))(-((1)/(4)))^k+(((5-\sqrt(5))/(20)))(((1+\sqrt(5))/(4)))^k+(((5+\sqrt(5))/(20)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$AB \times C$ & 1 & $((1)/(3))(((1)/(2)))^k + ((2)/(3))(-((1)/(4)))^k$ \\ 
+$AC \times A$ & 2 & $-((1)/(4))(-((1)/(2)))^k-((1)/(12))(((1)/(2)))^k+((1)/(3))(-((1)/(4)))^k+((\sqrt(5))/(10))((((1+\sqrt(5))/(4)))^k-(((1-\sqrt(5))/(4)))^k)$ \\ 
+$AC \times B$ & 2 & $((1)/(3))(((1)/(2)))^k - ((1)/(3))(-((1)/(4)))^k$ \\ 
+$AC \times C$ & 2 & $((1)/(4))(-((1)/(2)))^k-((1)/(4))(((1)/(2)))^k+((\sqrt(5))/(10))((((1+\sqrt(5))/(4)))^k-(((1-\sqrt(5))/(4)))^k)$ \\ 
+$CC \times A$ & 2 & $-((1)/(8))(-((1)/(2)))^k-((1)/(8))(((1)/(2)))^k+(((5-\sqrt(5))/(40)))(((1+\sqrt(5))/(4)))^k+(((5+\sqrt(5))/(40)))(((1-\sqrt(5))/(4)))^k$ \\ 
+$CC \times C$ & 1 & $((1)/(3)) - ((1)/(12))(-((1)/(2)))^k + ((1)/(4))(((1)/(2)))^k - (((5+3\sqrt(5))/(20)))(((1+\sqrt(5))/(4)))^k-(((5-3\sqrt(5))/(20)))(((1-\sqrt(5))/(4)))^k$ \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}

@@ -1,0 +1,5 @@
+# start: one locus, 2-way RIL by sib mating, autosome
+AAxAA   0
+AAxAB   0
+AAxBB   1
+ABxAB   0

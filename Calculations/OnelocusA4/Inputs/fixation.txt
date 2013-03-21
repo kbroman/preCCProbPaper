@@ -1,0 +1,3 @@
+# fixation probabilities
+four-way A  1 + left(frac[1,2]right)^k - left(frac[1,5]right)*left(frac[1,4]right)^k - left(frac[9+4*sqrt{5},10]right)*left(frac[1+sqrt{5},4]right)^k - left(frac[9-4*sqrt{5},10]right)*left(frac[1-sqrt{5},4]right)^k
+two-way  A  1 +           left(frac[2,5]right)*left(frac[1,4]right)^k - left(frac[7+3*sqrt{5},10]right)*left(frac[1+sqrt{5},4]right)^k - left(frac[7-3*sqrt{5},10]right)*left(frac[1-sqrt{5},4]right)^k

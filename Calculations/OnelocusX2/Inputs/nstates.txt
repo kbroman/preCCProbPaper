@@ -1,0 +1,7 @@
+# no. states: one locus, 2-way RIL by sib mating, X chromosome
+AAxA   1
+AAxB   1
+ABxA   1
+ABxB   1
+BBxA   1
+BBxB   1

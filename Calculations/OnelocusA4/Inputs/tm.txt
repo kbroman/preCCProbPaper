@@ -1,0 +1,15 @@
+# transition matrix: one locus, 4-way RIL by sib mating, autosome
+              AAxAA     AAxAB     AAxAC     AAxBB     AAxBC     AAxCC     AAxCD     ABxAB     ABxAC     ABxCD     ACxAC     ACxAD     ACxBD   
+AAxAA           1         0         0         0         0         0         0         0         0         0         0         0         0     
+AAxAB          1/4       1/2        0         0         0         0         0        1/4        0         0         0         0         0     
+AAxAC          1/4        0        1/2        0         0         0         0         0         0         0        1/4        0         0     
+AAxBB           0         0         0         0         0         0         0         1         0         0         0         0         0     
+AAxBC           0         0         0         0         0         0         0        1/4       1/2        0        1/4        0         0     
+AAxCC           0         0         0         0         0         0         0         0         0         0         1         0         0     
+AAxCD           0         0         0         0         0         0         0         0         0         0        1/2       1/2        0     
+ABxAB          1/8       1/2        0        1/8        0         0         0        1/4        0         0         0         0         0     
+ABxAC          1/16      1/8       1/8        0        1/8        0         0        1/16      1/4        0        1/8       1/8        0     
+ABxCD           0         0         0         0         0         0         0         0         0         0        1/4       1/2       1/4    
+ACxAC          1/8        0        1/2        0         0        1/8        0         0         0         0        1/4        0         0     
+ACxAD          1/16       0        1/4        0         0         0        1/8       1/16      1/4        0        1/8       1/8        0     
+ACxBD           0         0         0         0         0         0         0        1/8       1/2       1/8       1/8        0        1/8  

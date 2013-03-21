@@ -1,0 +1,6 @@
+# start: two loci, 2-way RIL by selfing
+AA|AA  0
+AB|AB  0
+AA|AB  0
+AA|BB  1
+AB|BA  0

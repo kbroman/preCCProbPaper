@@ -1,0 +1,14 @@
+# start: one locus, 4-way RIL by sib mating, autosome
+AAxAA   0
+AAxAB   0
+AAxAC  	0
+AAxBB   0
+AAxBC   0
+AAxCC   0
+AAxCD   0
+ABxAB   0
+ABxAC   0
+ABxCD   1
+ACxAC   0 
+ACxAD   0 
+ACxBD   0

@@ -1,0 +1,6 @@
+# matrix for calculating male X chr haplotype probabilities for 4-way RIL by sib mating 
+      AA   AB      AC     CC
+AA     0   1/2      0      0
+AB   1-r (1-r)/2    0    1/4
+AC     r   r/2      0    1/4
+CC     0    0       1    1/2

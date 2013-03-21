@@ -1,0 +1,14 @@
+# pi_k (for individual states): one locus, 4-way RIL by sib mating, autosome
+AAxAA frac[1,4] + frac[1,4]*left(frac[1,2]right)^k - frac[1,20]*left(frac[1,4]right)^k - left(frac[9+4*sqrt{5},40]right)*left(frac[1+sqrt{5},4]right)^k - left(frac[9-4*sqrt{5},40]right)*left(frac[1-sqrt{5},4]right)^k
+AAxAB frac[1,6]*left(-frac[1,4]right)^k+frac[1,10]*left(frac[1,4]right)^k-frac[1,6]*left(frac[1,2]right)^k-left(frac[1-sqrt{5},20]right)*left(frac[1+sqrt{5},4]right)^k - left(frac[1+sqrt{5},20]right)*left(frac[1-sqrt{5},4]right)^k
+AAxAC -frac[1,12]*left(-frac[1,4]right)^k+frac[1,20]*left(frac[1,4]right)^k-frac[1,6]*left(frac[1,2]right)^k + frac[1,10]*left[left(frac[1+sqrt{5},4]right)^k + left(frac[1-sqrt{5},4]right)^kright]
+AAxBB frac[1,3]*left(-frac[1,4]right)^k-frac[2,15]*left(-frac[1,8]right)^k+frac[1,30]*left(frac[1,4]right)^k-frac[1,30]*left(frac[1,2]right)^k-left(frac[2-sqrt{5},20]right)*left(frac[1+sqrt{5},4]right)^k-left(frac[2+sqrt{5},20]right)*left(frac[1-sqrt{5},4]right)^k
+AAxBC -frac[1,12]*left(-frac[1,4]right)^k + frac[2,15]*left(-frac[1,8]right)^k - frac[1,12]*left(frac[1,4]right)^k + frac[1,30]*left(frac[1,2]right)^k
+AAxCC -frac[1,6]*left(-frac[1,4]right)^k + frac[1,30]*left(-frac[1,8]right)^k + frac[1,60]*left(frac[1,4]right)^k - frac[1,30]*left(frac[1,2]right)^k +left(frac[3-sqrt{5},40]right)*left(frac[1+sqrt{5},4]right)^k+left(frac[3+sqrt{5},40]right)*left(frac[1-sqrt{5},4]right)^k
+AAxCD frac[1,6]*left(-frac[1,4]right)^k - frac[1,5]*left(-frac[1,8]right)^k + frac[1,30]*left(frac[1,2]right)^k
+ABxAB -frac[2,3]*left(-frac[1,4]right)^k+frac[2,15]*left(-frac[1,8]right)^k+frac[1,15]*left(frac[1,4]right)^k-frac[2,15]*left(frac[1,2]right)^k +left(frac[3-sqrt{5},10]right)*left(frac[1+sqrt{5},4]right)^k+left(frac[3+sqrt{5},10]right)*left(frac[1-sqrt{5},4]right)^k
+ABxAC frac[1,6]*left(-frac[1,4]right)^k-frac[2,15]*left(-frac[1,8]right)^k-frac[1,6]*left(frac[1,4]right)^k+frac[2,15]*left(frac[1,2]right)^k
+ABxCD frac[2,3]*left(-frac[1,8]right)^k+frac[1,3]*left(frac[1,4]right)^k
+ACxAC frac[1,3]*left(-frac[1,4]right)^k-frac[1,30]*left(-frac[1,8]right)^k+frac[1,30]*left(frac[1,4]right)^k-frac[2,15]*left(frac[1,2]right)^k -left(frac[2-2*sqrt{5},20]right)*left(frac[1+sqrt{5},4]right)^k-left(frac[2+2*sqrt{5},20]right)*left(frac[1-sqrt{5},4]right)^k
+ACxAD -frac[1,3]*left(-frac[1,4]right)^k + frac[1,5]*left(-frac[1,8]right)^k+frac[2,15]*left(frac[1,2]right)^k
+ACxBD -frac[1,3]*left(-frac[1,8]right)^k + frac[1,3]*left(frac[1,4]right)^k

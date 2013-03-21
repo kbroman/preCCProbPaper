@@ -1,0 +1,19 @@
+/* one autosomal locus, 2-way RIL by sib mating */
+/*  to load, use: batch("Maxima/onelocusA2_maxima.txt"); */
+
+nstates : matrix([2, 2, 1, 1])$ /* no. states */
+
+pi0 : matrix([0, 0, 1, 0])$  /* starting distribution */
+
+P : matrix(    /* transition matrix */
+      [1, 0, 0, 0],
+      [1/4, 1/2, 0, 1/4],
+      [0, 0, 0, 1],
+      [1/8, 1/2, 1/8, 1/4])$
+
+pik : matrix([    /* kth generation probabilities */
+(1/2) + (1/5)*(1/4)^k - ((7-3*sqrt(5))/20)*((1-sqrt(5))/4)^k - ((7+3*sqrt(5))/20)*((1+sqrt(5))/4)^k,
+(-4/5)*(1/4)^k + (2/5)*((1-sqrt(5))/4)^k + (2/5)*((1+sqrt(5))/4)^k,
+(2/5)*(1/4)^k + ((3+sqrt(5))/10)*((1-sqrt(5))/4)^k + ((3-sqrt(5))/10)*((1+sqrt(5))/4)^k,
+(4/5)*(1/4)^k - ((2 + 2*sqrt(5))/5)*((1-sqrt(5))/4)^k - ((2-2*sqrt(5))/5)*((1+sqrt(5))/4)^k])$
+

@@ -1,0 +1,75 @@
+no. strains = 8
+chr_type = X
+Construct individuals
+No. haplotypes = 25
+No. individuals = 625
+No. prototypes = 68
+AA|AA    2
+AA|AB    8
+AA|AC    8
+AA|AE   16
+AA|BB    2
+AA|BC    8
+AA|BE   16
+AA|CC    4
+AA|CE   16
+AA|EE    8
+AA|EF    8
+AB|AB    2
+AB|AC    8
+AB|AE   16
+AB|BA    2
+AB|BC    8
+AB|BE   16
+AB|CC    4
+AB|CE   16
+AB|EE    8
+AB|EF    8
+AC|AC    4
+AC|AE   16
+AC|BC    4
+AC|BE   16
+AC|CA    4
+AC|CB    4
+AC|CC    8
+AC|CE   16
+AC|EA   16
+AC|EB   16
+AC|EC   16
+AC|EE   16
+AC|EF   16
+AE|AE    8
+AE|AF    8
+AE|BE    8
+AE|BF    8
+AE|CC   16
+AE|CE   16
+AE|CF   16
+AE|EA    8
+AE|EB    8
+AE|EC   16
+AE|EE   16
+AE|EF   16
+AE|FA    8
+AE|FB    8
+AE|FC   16
+AE|FE   16
+AE|FF   16
+CC|CC    1
+CC|CE    8
+CC|EE    4
+CC|EF    4
+CE|CE    4
+CE|CF    4
+CE|EC    4
+CE|EE    8
+CE|EF    8
+CE|FC    4
+CE|FE    8
+CE|FF    8
+EE|EE    2
+EE|EF    8
+EE|FF    2
+EF|EF    2
+EF|FE    2
+Total = 625

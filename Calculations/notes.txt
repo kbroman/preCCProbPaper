@@ -1,0 +1,40 @@
+One-locus individual results, by Kimura's trick:
+
+  autosome:     notebook 15, pg 91
+  X chr male:   notebook 15, pg 93
+  X chr female: notebook 15, pg 94 (AA/CC) and 96 (AB/AC)
+
+
+
+Fixation probs, by considering 2-way RIL:
+  autosome: notebook 15, pg 89
+  X chr:    notebook 15, pg 90
+
+    
+
+Haplotypes:
+
+  autosomes, 4-way RIL: notebook 14, pg 52
+  X chr, female: notebook 14, pgs 78-80
+  X chr, male:   notebook 14, pg 41 and 71
+
+
+No. states: 
+
+  2-way, autosome: 2^8= 256
+                   no. hap = 4; no. dipl = 10; no. pairs of dipl = 55
+		   reduced states = 22
+
+  2-way, X chr:    2^6 = 64
+                   no. hap = 4; no. dipl = 10; no parental types = 40
+                   reduced states = 24
+
+  4-way, autosome: 4^8 = 65,536
+                   no. hap = 16; no dipl = 136; no pairs of dipl = 9,316
+                   reduced states = 700
+                   individual = 18
+
+  4-way, X chr:    3^6 = 729
+                   no. hap = 9; no dipl = 45; no pairs of dipl = 405
+                   reduced states = 116
+                   individual: female = 17; male = 4

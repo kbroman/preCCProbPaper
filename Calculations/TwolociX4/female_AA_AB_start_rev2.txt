@@ -1,0 +1,6 @@
+# start matrix for calculating Pr(AA|AB) for female in 4-way RIL, X chr
+AA|AB  (4)   0  0  0  0  0 1/2   0  0  0  0  0  0    0  0  0  0  0  0
+AA|AC  (4)   0  0  0  0  0  0    0  0  0  0  0 1/2   0  0  0  0  0  0
+AB|AC  (4)   0  0  0  0  0  0    0  0  0  0  0  0   1/2 0  0  0  0  0
+AC|BC  (2)   0  0  0  0  0  0    0  0  0  0  0  0    0  0  0  0  0  1
+AC|CC  (4)   0  0  0  0  0  0    0  0  0  0  0  0    0  0  0 1/2 0  0

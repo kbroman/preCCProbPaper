@@ -1,0 +1,5 @@
+# no. states: one locus, 2-way RIL by sib mating, autosome
+AAxAA    2
+AAxAB    2
+AAxBB    1
+ABxAB    1

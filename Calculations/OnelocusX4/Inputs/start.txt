@@ -1,0 +1,11 @@
+# start: one locus, 4-way RIL by sib mating, X chromosome
+AAxA   0
+AAxB   0
+AAxC   0
+ABxA   0
+ABxC   1
+ACxA   0
+ACxB   0
+ACxC   0
+CCxA   0
+CCxC   0

@@ -1,0 +1,5 @@
+# starting values for calculating female X chr haplotype probabilities for 4-way RIL by sib mating 
+AA (2)   1/2   0       0      0
+AB (2)    0   1/2      0      0
+AC (4)    0    0       0    1/4
+CC (1)    0    0       1      0
