@@ -27,7 +27,6 @@ Calculations/TwolociX4/male[0-9]*.txt
 .RData
 *.o
 DOpaper/
-Tables/*.tex
 preCCprob.tex
 preCCprob_supp.tex
 Calculations/TwolociA4/indprob.tgz

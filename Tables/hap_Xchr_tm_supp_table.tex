@@ -1,0 +1,66 @@
+{ \small \renewcommand{\arraystretch}{1.1}
+\begin{center}
+\begin{tabular}{ccccccc} \hline
+ & & &\multicolumn{4}{c}{State at $k+1$} \\
+\cline{4-7}
+\multicolumn{2}{c}{State at $k$} & 
+& 1& 2& 3& 4\\ \hline 
+1 &
+{\renewcommand{\arraystretch}{0.3}
+\renewcommand{\tabcolsep}{0.5mm}
+\parbox[b][3mm][c]{12mm}{
+\begin{tabular}{|p{2mm}|p{2mm}||p{2mm}|} \hline
+$\bullet$ &           &           \\
+$\bullet$ &           &           \\ \hline
+\end{tabular}}}
+&
+& $(1-r)/2$
+& $0$
+& $1-r$
+& $1/4$
+\\
+2 &
+{\renewcommand{\arraystretch}{0.3}
+\renewcommand{\tabcolsep}{0.5mm}
+\parbox[b][3mm][c]{12mm}{
+\begin{tabular}{|p{2mm}|p{2mm}||p{2mm}|} \hline
+$\bullet$ &           &           \\
+          & $\bullet$ &           \\ \hline
+\end{tabular}}}
+&
+& $r/2$
+& $0$
+& $r$
+& $1/4$
+\\
+3 &
+{\renewcommand{\arraystretch}{0.3}
+\renewcommand{\tabcolsep}{0.5mm}
+\parbox[b][3mm][c]{12mm}{
+\begin{tabular}{|p{2mm}|p{2mm}||p{2mm}|} \hline
+          &           & $\bullet$ \\
+          &           & $\bullet$ \\ \hline
+\end{tabular}}}
+&
+& $1/2$
+& $0$
+& $0$
+& $0$
+\\
+4 &
+{\renewcommand{\arraystretch}{0.3}
+\renewcommand{\tabcolsep}{0.5mm}
+\parbox[b][3mm][c]{12mm}{
+\begin{tabular}{|p{2mm}|p{2mm}||p{2mm}|} \hline
+$\bullet$ &           &           \\
+          &           & $\bullet$ \\ \hline
+\end{tabular}}}
+&
+& $0$
+& $1$
+& $0$
+& $1/2$
+\\
+\hline
+\end{tabular}
+\end{center} }
