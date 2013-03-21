@@ -2,8 +2,18 @@
 This repository contains the source for the paper
 [Broman KW (2012) Genotype probabilities at intermediate generations in the construction of recombinant inbred lines. Genetics 190:403-412](http://www.ncbi.nlm.nih.gov/pubmed/22345609)
 
-Still need to explain some of the complexities:
+This is a complex and quite theoretical paper with lots of complicated
+algebraic results.
 
-Maxima code, R code, base code that is converted to maxima and R
-Perl scripts to convert simple format to maxima, R and to tables
+The
+[Calculations/](https://github.com/kbroman/preCCProbPaper/tree/master/Calculations)
+directory contains all of the primary results.  For each of various
+different situations, I have plain text files (e.g.,
+[this one](https://github.com/kbroman/preCCProbPaper/blob/master/Calculations/Selfing/Inputs/pi_k.txt)),
+there are simple-to-parse versions of the algebraic expressions plus a
+perl script that converts them into Maxima code, R code, and LaTeX
+code.  The Maxima and R versions are used to check the results,
+symbolically and numerically.  The LaTeX versions are ultimately
+incorporated into the paper.
+
 
