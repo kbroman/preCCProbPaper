@@ -31,4 +31,4 @@ final latex files
 and
 [preCCprob_supp.tex](https://github.com/kbroman/preCCProbPaper/tree/master/preCCprob_supp_notab.tex).
 
-
+[![CC BY](http://i.creativecommons.org/l/by/3.0/88x31.png)](http://creativecommons.org/licenses/by/3.0/)
