@@ -3,7 +3,7 @@ Perl scripts
 
 I create a bunch of plain text files with basic results.  These get
 parsed into LaTeX tables for the paper and Supplement as well as into
-Maxima code (for testing and calculatong) and also R code (for testing
+Maxima code (for testing and calculating) and also R code (for testing
 and making figures).
 
 The scheme is that there's one set of files with the key results that
