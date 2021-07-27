@@ -1,6 +1,5 @@
-
 This repository contains the source for the paper
-[Broman KW (2012) Genotype probabilities at intermediate generations in the construction of recombinant inbred lines. Genetics 190:403-412](http://www.ncbi.nlm.nih.gov/pubmed/22345609)
+[Broman KW (2012) Genotype probabilities at intermediate generations in the construction of recombinant inbred lines. Genetics 190:403-412](https://doi.org/10.1534/genetics.111.132647)
 
 This is a complex and quite theoretical paper with lots of complicated
 algebraic results.
